@@ -1,0 +1,13 @@
+wpisz charakterystyke hurtowni w postaci pewnego fragmentu tekstu (ilosc tekstu taki aby moc oblac
+logo) co najmniej dwa kolory czcionki, co najmniej dwie wielkosci czcionek, co najmniej dwa rodzaje
+czcionek, zastosuj pogrubienie, podkreslenie, indeksy, wyrownywanie do lewej/centrowanie/do prawej,
+
+
+uzyj tekstu alternatywnego ( z odpowiednim opisem )
+logo wyswietlane w wielkosci szerokosc 700 wysokosc 200 obramowanie, obramowanie 6
+uzyj oblewania tekstem logo hurtowni/sklepu ( na cel)
+
+
+
+Linki beda do tych opcji w oparciu o dowolne niewielkie grafiki?wstawiaj grafiki w odpowiednim formacie( w
+takim jakie sa stosowane na stronach WWW)
