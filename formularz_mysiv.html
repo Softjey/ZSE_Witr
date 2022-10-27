@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		body{
+			background-color: #C5D5E4;
+		}
+
+		.form{
+			display: flex;
+		}
+		.left_big_block{
+			display: flex;
+			flex-direction: column;
+			width: 20vw;
+			flex-wrap: wrap;
+			background-color: none;
+
+		}
+		.name_block{
+			width: 100%;
+			height: 5vw;
+			background-color: #466362;
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;	
+			padding-bottom: 0.5vw;
+			padding-top: 0.2vw;
+			border-radius: 0.5vw;
+		}
+		.name_block > label{
+			color: white;
+			font-size: 1vw;
+			text-shadow: 0.05vw 0.05vw 0.1vw black;
+		}
+		.select_name_block{
+			width: 8.4vw;
+			height: 1.3vw;
+		}
+		.input_name_block{
+			width: 8vw;
+			height: 1vw;
+		}
+		.relship_friends_block{
+			background-color: #466362;
+			width: 100%;
+			height: 10vw;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			border-radius: 1vw 1vw 0.2vw 0.2vw;
+			margin-top: 1vw;
+		}
+		.head_question{
+			width: 100%;
+			background-color: #8896AB;
+			border-radius: 1vw 1vw 0 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 25%;
+			color: white;
+			font-size: 1vw;
+			text-shadow: 0.05vw 0.05vw 0.1vw black;
+
+		}
+		.relship_friends_input{
+			transform:scale(1.5);
+			width: 2vw;
+			background-color: red;
+		}
+		.relship_friends_label{
+			color: white;
+			font-size: 1vw;
+			text-shadow: 0.03vw 0.03vw 0.03vw black;
+		}
+		.relship_head{
+			font-size: 0.9vw;
+			text-align: center;
+		}
+		.subjects_block{
+			width: 100%;
+			height: 3.5vw;
+			background-color: none;
+			display: flex;
+			justify-content: space-around;
+			margin-top: 1vw;
+			flex-wrap: wrap;
+		}
+		.subject_block{
+			background-color: yellow;
+			width: 43%;
+			height: 100%;
+			border-radius: 0.7vw;
+		}
+		.select_subject_block{
+			width: 100%;
+			height: 100%;
+			border-radius: 0.7vw;
+		}
+		.adequate_mark_block{
+			margin-top: 1vw;
+			width: 43%;
+			height: 26vw;
+			background-color: #466362;
+			border-radius: 1vw 1vw 0.2vw 0.2vw;
+			display: flex;
+			flex-direction: column;
+		}
+		.ad_mark_displ_block{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+		.form_qustn_block{
+			width: 43%;
+			height: 26vw;
+			background-color: none;
+			margin-top: 1vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+
+		}
+		.mark_form_block{
+			width: 100%;
+			height: 35%;
+			background-color: #466362;
+			border-radius: 1vw 1vw 0.3vw 0.3vw;
+		}
+		.mark_form_range{
+			height: 75%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.smile{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.button{
+			height: 12%;
+			border-radius: 0.7vw;
+			border: solid #466362 0.14vw;
+			background-color: #8896AB ;
+			color: white;
+			font-size: 1vw;
+			text-shadow: 0.05vw 0.05vw 0.1vw black;
+			text-align: center;
+		}
+		.button > a{
+			text-decoration: none;
+			background-color: #8896AB ;
+			color: white;
+			font-size: 1vw;
+			text-shadow: 0.05vw 0.05vw 0.1vw black;
+		}
+		.right_big_block{
+			background-color: none;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			width: 80vw;
+			height: 48.3vw;
+		}
+		.open_qstn{
+			width: 48%;
+			height: 30%;
+			border-radius: 1vw;
+			background-color: none;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+		.oq_raiting_block{
+			width: 100%;
+			height: 20%;
+			background-color: #466362;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 10vw;
+
+		}
+		.oq_raiting_block > label{
+			font-size: 1vw;
+			color: white;
+		}
+		.oq_textarea_hor{
+			width: 99%;
+			height: 55%;
+			border-radius: 0 0 1vw 1vw;
+			resize: none;
+
+		}
+		.oq_rating_item{
+			transform:scale(2);
+		}
+		.oq_input_name{
+			width: 100%;
+			height: 100%;
+		}
+		.oq_rating_block_1{
+			width: 20%;
+			height: 75%;
+			background-color: #466362;
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 10vw;
+			border-radius: 0 0 0 1vw;
+		}
+		.oq_textarea_ver{
+			width: 79%;
+			height: 73%;
+			border-radius: 0 0 1vw 0;
+			resize: none;
+		}
+		.oq_rating_block_1 > label{
+			color: white;
+			font-size: 1vw;
+			text-shadow: 0.05vw 0.05vw 0.1vw black;
+
+		}
+		h1{
+			color: white;
+			text-shadow: 0.05vw 0.05vw 0.1vw black;
+			text-align: center;
+		}
+		
+	</style> 
+</head>
+<body>
+	<h1> Formularz o szkole zaproponowany przez Mysiva Sviatoslava</h1>
+	<form class="form"  action="mailto:mkryniew@ids.gda.pl" method="post" subject="formularz_dane">
+		<div class="left_big_block">
+			<div class="name_block">
+				<label>Imię <br> <input type="name" class="input_name_block" placeholder="Name" name="name" /></label>
+				<label>Nazwisko <br> <input type="name" class="input_name_block" name="surname" /></label>
+				<label>Klasa<br>
+				<select class="select_name_block" name="class">
+					<optgroup label="1"><option>1A</option><option selected>1B</option><option>1C</option><option>1D</option></optgroup>
+					<optgroup label="2"><option>2A</option><option>2B</option><option>2C</option><option>2D</option></optgroup>
+					<optgroup label="3"><option>3A</option><option>3B</option><option>3C</option><option>3D</option></optgroup>
+					<optgroup label="4"><option>4A</option><option>4B</option><option>4C</option><option>4D</option></optgroup></select></label>
+				<label>PESEL <br> <input type="password" class="input_name_block" maxlength="11"/></label>
+			</div>
+
+			<div class="relship_friends_block">
+				<div class="head_question">Relacje z kolegami/koleżankami</div>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input" value="Bardzo dobry">Bardzo dobry</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input" value="Dobrze">Dobrze</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input" value="Normalnie">Normalnie</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input" value="Tak sobie">Tak sobie</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input" value="Dobrze, ale nie ze wszystkimi">Dobrze, ale nie ze wszystkimi</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input" value="Niedobrze">Niedobrze</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input" value="Złe">Złe</label>
+			</div>
+
+			<div class="subjects_block">
+				<div class="subject_block">
+				<select class="select_subject_block" name="favorite_subject">
+					<option>Ulubiony przedmiot</option><option>biologia</option>
+					<option>chemia</option><option>EDB</option>
+					<option>fizyka</option><option>geografia</option>
+					<option>historia</option><option>informatyka</option>
+					<option>język polski</option><option>język angelski</option>
+					<option>muzyka</option><option>matematyka</option>
+					<option>plastyka</option><option>przyroda</option>
+					<option>technika</option><option>WF</option></select>
+				</div>
+				<div class="subject_block">
+					<select class="select_subject_block" name="!favorite_subject">
+					<option>Najgorszy przedmiot</option><option>biologia</option>
+					<option>chemia</option><option>EDB</option>
+					<option>fizyka</option><option>geografia</option>
+					<option>historia</option><option>informatyka</option>
+					<option>język polski</option><option>język angelski</option>
+					<option>muzyka</option><option>matematyka</option>
+					<option>plastyka</option><option>przyroda</option>
+					<option>technika</option><option>WF</option></select>
+				</div>
+			
+
+			<div class="adequate_mark_block">
+				<div class="head_question relship_head">Wystarczająca ocena dla Ciebie</div>
+				<div class="ad_mark_displ_block"><label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input">cel(6)</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input">bdb(5)</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input">db(4)</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input">dst(3)</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input">dop(2)</label>
+				<label class="relship_friends_label"><input type="radio" name="relship_friends" class="relship_friends_input">ndt(1)</label></div>
+			</div>
+
+			<div class="form_qustn_block">
+				<div class="mark_form_block">
+					<div class="head_question">Oceń mój formularz</div>
+					<div class="mark_form_range"><div class="smile"><div>🙁</div><div>😃</div></div><input type="range" min="0" max="10" step="1" value="5"></div>
+				</div>
+					<input class="button" type="reset" value="Usuń dane">
+					<input type="submit" class="button" value="Wyślij formularz">
+					<button class="button" type="button"><a href="index.html">Wróć</a></button>
+					<button class="button" type="button"><a href="https://youtu.be/_grkKX2dKqc">NIE NACISKAJ!!!</a></button>
+			</div>
+			</div>
+		</div>
+		
+		<div class="right_big_block">
+
+			<div class="open_qstn">
+				<div class="head_question">Co myślisz o szkolnej stołówce?</div>
+				<div class="oq_raiting_block">
+					<label><input type="checkbox" name="eat_room" class="oq_rating_item" value="1">⠀1★</label>
+					<label><input type="checkbox" name="eat_room" class="oq_rating_item" value="2">⠀2★</label>
+					<label><input type="checkbox" name="eat_room" class="oq_rating_item" value="3">⠀3★</label>
+					<label><input type="checkbox" name="eat_room" class="oq_rating_item" value="4">⠀4★</label>
+					<label><input type="checkbox" name="eat_room" class="oq_rating_item" value="5" checked>⠀5★😁</label>
+				</div>
+				<textarea class="oq_textarea_hor"></textarea>
+			</div>
+
+			<div class="open_qstn">
+				<div class="head_question">Co myślisz o planie lekcji?</div>
+					<div class="oq_rating_block_1">
+					<label><input type="checkbox" name="lessons_plan" class="oq_rating_item" value="4">⠀1★</label>
+					<label><input type="checkbox" name="lessons_plan" class="oq_rating_item" value="3">⠀2★</label>
+					<label><input type="checkbox" name="lessons_plan" class="oq_rating_item" value="2">⠀3★</label>
+					<label><input type="checkbox" name="lessons_plan" class="oq_rating_item" value="1">⠀4★</label>
+				</div>
+				<textarea class="oq_textarea_ver"></textarea>
+			</div>
+
+			<div class="open_qstn">
+				<div class="head_question">Jak oceniasz mundurek szkolny i czy jest to konieczne?</div>
+				<div class="oq_raiting_block">
+					<label><input type="radio" name="school_uniform" class="oq_rating_item" value="1">⠀1★</label>
+					<label><input type="radio" name="school_uniform" class="oq_rating_item" value="2">⠀2★</label>
+					<label><input type="radio" name="school_uniform" class="oq_rating_item" value="3">⠀3★</label>
+					<label><input type="radio" name="school_uniform" class="oq_rating_item" value="4">⠀4★</label>
+					<label><input type="radio" name="school_uniform" class="oq_rating_item" value="5">⠀5★</label>
+				</div>
+				<textarea class="oq_textarea_hor"></textarea>
+			</div>
+
+			<div class="open_qstn">
+				<div class="head_question">Czy uważasz, że jakieś lekcje są niepotrzebne?</div>
+				<div class="oq_raiting_block">
+					<label><input type="radio" name="no_need_lessons" class="oq_rating_item" value="1" checked>⠀1★</label>
+					<label><input type="radio" name="no_need_lessons" class="oq_rating_item" value="2">⠀2★</label>
+					<label><input type="radio" name="no_need_lessons" class="oq_rating_item" value="3">⠀3★</label>
+					<label><input type="radio" name="no_need_lessons" class="oq_rating_item" value="4">⠀4★</label>
+				</div>
+				<textarea class="oq_textarea_hor"></textarea>
+			</div>
+
+			<div class="open_qstn">
+				<div class="head_question">Co myślisz o szkolnym psychologu?</div>
+				<div class="oq_rating_block_1">
+					<label><input type="checkbox" name="psychologist" class="oq_rating_item" value="1">⠀1★</label>
+					<label><input type="checkbox" name="psychologist" class="oq_rating_item" value="2">⠀2★</label>
+					<label><input type="checkbox" name="psychologist" class="oq_rating_item" value="3">⠀3★</label>
+				</div>
+				<textarea class="oq_textarea_ver"></textarea>
+			
+			</div>
+
+			<div class="open_qstn">
+				<div class="head_question">Skargi i propozycji do szkoły</div>
+				<div class="oq_raiting_block">
+					<input type="name" class="oq_input_name" placeholder="Wpisz temat skargi lub propozycji (do 70 znaków)" maxlength="70">	
+				</div>
+				<textarea class="oq_textarea_hor"></textarea>
+
+			</div>
+		</div>
+	</form>
+</body>
+</html>
