@@ -4,9 +4,65 @@
 <head>
 <meta charset="utf-8">
 <title> Tabela-Mysiv </title>
+<style>
+		.table{border-collapse: collapse;}
+		.table td, th{border: 1px solid red;padding: 3px;}
+		.table th{color: white;background-color: #082390;padding: 7px;}
+		.bckg_clr1 {background-color: #bcd4ec;}
+		.bckg_clr2 {background-color: #9cc4e4;}
+		.bckg_clr3 {background-color: #2c74b4;} 	
+		.card_name{color: yellow;font-weight: bold;text-align: center;}
+		.clck_speed{color: red;}
+		.mem_size{color: red;text-align: right;}
+		.mem_bus{color: red;text-align: center;}
+		#akt{text-align: center;background-color: #ddebf7;}
+		#head_t{font-size: 30px; text-align: center; font-weight: bold;}
+	</style> 
 </head>
 <body>
-tabela<br>
+<table class="table">
+	<tr><td colspan="5" id="head_t">Dane komputrowe - Mysiv Sviatoslav 1Pg1</td></tr>
+	<tr>
+    	<th>Model karty graficznej</th>
+    	<th>Taktowanie bazowe</th>
+    	<th>Rozmiar pamięci</th>
+    	<th>Szyna pamięci</th>
+    	<th>Typ chlodzenia</th>
+ 	</tr>
+ 	<tr class="bckg_clr1">
+ 		<td class="card_name">RTX 3090</td>
+ 		<td class="clck_speed">1395 MHz</td>
+ 		<td class="mem_size">24 GB</td>
+ 		<td class="mem_bus">384-bit</td>
+ 		<td rowspan="6" id="akt">Aktywne</td></tr>
+  	<tr class="bckg_clr1">
+  		<td class="card_name">RTX 3080Ti</td>
+  		<td class="clck_speed">1365 MHz</td>
+  		<td class="mem_size">12 GB</td>
+  		<td class="mem_bus">384-bit</td></tr>
+  	<tr class="bckg_clr2">
+  		<td class="card_name">RTX 3080</td>
+  		<td class="clck_speed">1440 MHz</td>
+  		<td class="mem_size">10GB</td>
+  		<td class="mem_bus">320-bit</td></tr>
+  	<tr class="bckg_clr2">
+  		<td class="card_name">RTX 3070Ti</td>
+  		<td class="clck_speed">1575 MHz</td>
+  		<td class="mem_size">8GB</td>
+  		<td class="mem_bus">256-bit</td></tr>
+  	<tr class="bckg_clr2">
+  		<td class="card_name">RTX 3070</td>
+  		<td class="clck_speed">1500 MHz</td>
+  		<td class="mem_size">8GB</td>
+  		<td class="mem_bus">256-bit</td></tr>
+  	<tr class="bckg_clr3">
+  		<td class="card_name">RTX 3060Ti</td>
+  		<td class="clck_speed">1410 MHz</td>
+  		<td class="mem_size">8GB</td>
+  		<td class="mem_bus">256-bit</td></tr>
+  	<tr><th colspan="5">Dane komputerowe</th></tr>
+
+</table>
 <a href="index.html">wroć</a>
 </body>
 </html>
